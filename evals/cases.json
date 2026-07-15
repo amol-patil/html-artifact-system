@@ -1,0 +1,26 @@
+[
+  {
+    "id": "logistics-dashboard",
+    "artifactKind": "dashboard",
+    "output": "logistics-dashboard.html",
+    "prompt": "Create an executive dashboard for a regional logistics company. Show on-time delivery, cost per shipment, active exceptions, carrier performance, and a twelve-week trend. Use realistic embedded data. Deliver one self-contained HTML file."
+  },
+  {
+    "id": "retention-brief",
+    "artifactKind": "document",
+    "output": "retention-brief.html",
+    "prompt": "Create a board-ready narrative brief explaining a decline in customer retention. Include an executive conclusion, cohort evidence, annotated figures, three recommendations, sources, and print-ready formatting. Deliver one self-contained HTML file."
+  },
+  {
+    "id": "quarterly-review",
+    "artifactKind": "presentation",
+    "output": "quarterly-review.html",
+    "prompt": "Create a seven-section quarterly business review presentation for a B2B software company. Support keyboard navigation, visible progress, one conclusion per section, and print-to-PDF. Use realistic embedded data and deliver one self-contained HTML file."
+  },
+  {
+    "id": "incident-console",
+    "artifactKind": "operational",
+    "output": "incident-console.html",
+    "prompt": "Create an incident operations console with search, severity and owner filters, an incident queue, service health, an activity timeline, and designed loading, empty, partial-data, and error states. Deliver one self-contained HTML file."
+  }
+]

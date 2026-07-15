@@ -1,0 +1,47 @@
+{
+  "name": "html-artifact-kit",
+  "version": "1.0.0",
+  "description": "A provider-neutral Agent Skill for polished, portable, self-contained HTML artifacts.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amol-patil/html-artifact-kit.git"
+  },
+  "homepage": "https://github.com/amol-patil/html-artifact-kit#readme",
+  "bugs": {
+    "url": "https://github.com/amol-patil/html-artifact-kit/issues"
+  },
+  "type": "module",
+  "bin": {
+    "html-artifact": "./bin/html-artifact.mjs"
+  },
+  "files": [
+    "bin/",
+    "skill/build-html-artifacts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "npm run build:css && node scripts/build.mjs",
+    "build:css": "node scripts/build-css.mjs",
+    "validate": "node scripts/validate.mjs",
+    "conformance": "node skill/build-html-artifacts/scripts/audit-artifact.mjs examples/html-artifact-kit-showroom.html",
+    "audit:dir": "node scripts/audit-directory.mjs",
+    "test:auditor": "node scripts/test-auditor.mjs",
+    "eval:prompts": "node scripts/print-eval-prompts.mjs",
+    "eval": "node scripts/run-evals.mjs",
+    "check": "npm run build && npm run validate && npm run conformance && npm run test:contrast && npm run test:auditor && npm run test:installer",
+    "doctor": "node bin/html-artifact.mjs doctor",
+    "install:local": "node bin/html-artifact.mjs install --harness all --force",
+    "test:installer": "node scripts/test-installer.mjs",
+    "test:contrast": "node scripts/test-contrast.mjs",
+    "pack:check": "npm pack --dry-run"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  }
+}
